@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  postgres:
+    image: postgres:10.14
+    restart: always
+    container_name: postgres-challenge
+    environment:
+      POSTGRES_USER: challenge
+      POSTGRES_PASSWORD: senha123
+      POSTGRES_DB: challenge
+    ports:
+      - '5434:5432'
